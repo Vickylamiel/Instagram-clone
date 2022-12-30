@@ -13,50 +13,124 @@ body{
     background: #f8f8f8;
 }
 
-:root{
-    background: linear-gradient(to right, #e2336b, #fcac46);
-}
-
-.container{
-    display: flex;
-}
+/* :root{
+    --gradient: linear-gradient(to right, #e2336b, #fcac46);
+} */
 
 .sidebar{
-    /* position: fixed; */
-    width: 300px;
-    height: 100vh;
-    background: #fff;
-}
-
-.home{
-    position: absolute;
-    background: #f8f8f8;
-    border-radius: 1rem 0 0 1rem;
-}
-
-/* .sidebar{
     position: fixed;
     width: 300px;
     height: 100vh;
-    background: #f8f8f8;
+    background: #fff;
     z-index: 2;
+    padding: 30px;
 }
 
 .home{
     position: absolute;
-    width: calc(100% - 300px);
+    background: #f8f8f8;
+    border-radius: 1rem 0 0 1rem;
+    width: 1000px;
+    min-height: 100vh;
     top: 0;
     left: 300px;
-    background: #fff;
-    border-radius: 1rem 0 0 1rem;
     z-index: 1000;
-} */
-
-.logo{
-    background: #f8f8f8;
 }
 
 .logo-image{
     width: 140px;
-    background: #f8f8f8;
+}
+
+.profile-img{
+    /* display: flex; */
+    /* align-items: flex-start; */
+    /* justify-content: flex-start; */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* border: 2px solid #000; */
+}
+
+.profile-img img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: center;
+}
+
+.menu{
+    margin-top: 30px;
+}
+
+.menu a{
+    width: 100%;
+    font-size: 1rem;
+    color: #000;
+    display: flex;
+    align-items: center;
+    line-height: 40px;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+}
+
+.menu a:hover{
+    box-shadow: 2px 2px 2px #f8f8f8;
+    border-radius: 40px;
+    color: #e2336b;
+}
+
+.menu .icon, .profile{
+    margin-right: 1rem;
+    font-size: 20px;
+}
+
+.menu a:hover::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 2px;
+    height: 17px;
+    background: #e2336b;
+}
+
+section{
+    padding: 30px 18%;
+    display: flex;
+}
+
+.story{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+    /* border: 1px solid grey; */
+    background: #fff;
+    border: 1px solid #e2dbdb;
+    border-radius: 8px;
+    margin-bottom: 0;
+    /* margin-top: 16px; */
+    padding: 10px 0;
+}
+
+.story-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 2px solid #e2336b;
+}
+
+.story-img img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: center;
+}
+
+.story-list p{
+    text-align: center;
 }
